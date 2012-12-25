@@ -1,14 +1,13 @@
 -function($) {
   var bg = $('.bg-wrap'),
       arr = ['first', 'second', 'third', 'forth', 'fifth', 'sixth', 'eighth', 'nighth', 'tenth'];
-  bg.mouseenter(function() {
+  $(document).ready(function() {
     replaceClass('first');
+    bg[0].addEventListener('webkitTransitionEnd', function(e) {
+      var target = e.target;
+      triggerNext.call(target, 1, 2);
+    }, false);
   });
-  bg[0].addEventListener('webkitTransitionEnd', function(e) {
-    var target = e.target;
-    triggerNext.call(target, 1, 2);
-  }, false);
-
   function triggerNext() {
     var nodeName = this.className;
     nodeName = nodeName.slice(0, -4);
@@ -25,7 +24,3 @@
   }
 
 }(window.jQuery);
-
-document.onload = function() {
-  console.log('hello world');
-};

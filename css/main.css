@@ -95,25 +95,27 @@ textarea {
 .bg-wrap {
     height: 20px;
 }
-.first-start, .second-start, .third-start {
+.first-start, .second-start, .third-start, .forth-start, .fifth-start {
     background-color: #f8f8f8;
     float: left;
     width: 0;
     height: 100%;
     transition-property: width;
     -webkit-transition-property: width;
-    transition-duration: 2s;
-    -webkit-transition-duration: 2s;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
 }
-.first-end, .second-end, .third-end  {
+.first-end, .second-end, .third-end, .forth-end, .fifth-end {
     background-color: #f8f8f8;
     float: left;
-    width: 33.3%;
+    width: 20%;
     height: 100%;
     -webkit-transition-property: width;
     transition-property: width;
-    -webkit-transition-duration: 2s;
-    transition-duration: 2s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
 }
 .second-start {
     background-color: #1068C9;
@@ -127,6 +129,19 @@ textarea {
 .third-end {
     background-color: #23ACFC;
 }
+.forth-start {
+    background-color: #2C5797;
+}
+.forth-end {
+    background-color: #2C5797;
+}
+.fifth-start{
+    background-color: #FD7072;
+}
+.fifth-end{
+    background-color: #FD7072;
+}
+
 .nav {
     list-style-type: none;
     padding: 0;
