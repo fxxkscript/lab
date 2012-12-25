@@ -93,52 +93,44 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .bg-wrap {
-    height: 20px;
+    height: 10px;
+    position: relative;
 }
-.first-start, .second-start, .third-start, .forth-start, .fifth-start {
-    background-color: #f8f8f8;
-    float: left;
-    width: 0;
+.mask, .mask-end {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    transition-property: width;
+    background-color: #FFF;
+    right: 0;
     -webkit-transition-property: width;
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
+    transition-property: width;
+
+    -webkit-transition-duration: 5s;
+    transition-duration: 5s;
+
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+
 }
-.first-end, .second-end, .third-end, .forth-end, .fifth-end {
+.mask-end {
+    width: 0;
+}
+.first, .second, .third, .forth, .fifth {
     background-color: #f8f8f8;
     float: left;
     width: 20%;
     height: 100%;
-    -webkit-transition-property: width;
-    transition-property: width;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    -webkit-transition-timing-function: ease;
 }
-.second-start {
+.second {
     background-color: #1068C9;
 }
-.second-end {
-    background-color: #1068C9;
-}
-.third-start {
+.third {
     background-color: #23ACFC;
 }
-.third-end {
-    background-color: #23ACFC;
-}
-.forth-start {
+.forth {
     background-color: #2C5797;
 }
-.forth-end {
-    background-color: #2C5797;
-}
-.fifth-start{
-    background-color: #FD7072;
-}
-.fifth-end{
+.fifth {
     background-color: #FD7072;
 }
 
