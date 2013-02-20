@@ -134,12 +134,9 @@ textarea {
     background-color: #FD7072;
 }
 
-.nav {
-    list-style-type: none;
-    padding: 0;
-
+canvas {
+    border: 1px solid #000;
 }
-
 
 
 
